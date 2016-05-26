@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+
+		<title>Slide-Show</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<link rel="styleshteet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!-- Latest modrenizr compiled and minified -->
+        <script src="js/modernizr-1.0.min.js"></script>
+
+		<!-- Custom Java Script for the slide show -->
+        <script src="js/slide-show-javaScript.js"></script>
+		
+		<style type="text/css">
+
+		#slideShow{
+
+			opacity: 0;
+			transition: opacity 1s linear;
+			margin: 0 auto;
+
+		}
+
+		figcaption{
+			text-align: center;
+			font-size: 16px;
+			line-height: 1.14em;
+			font-family: helvetica;
+			color: rgba(34,141,203,.75);
+		}
+
+		</style>
+
+	</head>
+
+		<body>
+
+			<header>
+
+				<nav class="navbar navbar-default" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Slide Show</a>
+					</div>
+				
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="https://www.facebook.com/hmntkmr" id="play">About</a></li>
+							<li><a href="https://ca.linkedin.com/in/hmntkmr" class="right" id="full-screen">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+				
+			</header>
+ 
+			<div class="container-fluid">
+				
+				<div class="row">
+				
+					<div id="slideShow" class="jumbotron container-fluid">
+							
+							
+					</div>
+					
+				</div>
+
+			</div>		
+
+			<br>
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+						<img src="images/us-trip-1.jpg" class="img-responsive thumbnail" alt="Image">
+						
+					</div>
+
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+						<img src="images/us-trip-2.jpg" class="img-responsive thumbnail" alt="Image">
+						
+					</div>
+
+
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+						<img src="images/us-trip-5.jpg" class="img-responsive thumbnail" alt="Image">
+						
+					</div>
+
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+						<img src="images/us-trip-6.jpg" class="img-responsive thumbnail" alt="Image">
+					
+					</div>
+				
+				</div>
+
+
+
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+						<div class="container center-block">
+
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+								<img src="images/us-trip-3-hor.jpg" class=" img-responsive thumbnail" alt="Image">
+
+							</div>
+
+						</div>	
+
+					</div>	
+
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						
+
+						<div class="container center-block">	
+							
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	 
+								<img src="images/us-trip-4-hor.jpg" class=" img-responsive thumbnail" alt="Image">
+						
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>	
+
+			<script type="text/javascript" src="js/slide-show-javascript.js"></script>	
+
+
+		<script type="text/javascript">
+
+			var images = ["<figure><img src=\"images/us-trip-1.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-2.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-3-hor.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-4-hor.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-5.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-6.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-7.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-8.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-9.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-10.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-11.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-12.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-13.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-14.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>",
+			"<figure><img src=\"images/us-trip-15.jpg\" alt=\"An awesome picture1\" class=\"img-responsive center-block img-rounded\"><br><figcaption>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption></figure>"];
+
+
+			var slideContainer = document.getElementById("slideShow");
+
+
+
+			var i=0;
+
+			setInterval(imageLoader, 5000);
+
+
+			function imageLoader(){
+
+
+				if (i > images.length - 1){
+					
+					i=0;
+
+				}
+
+				slideContainer.style.opacity = 1;
+
+				slideContainer.innerHTML = images[i];
+
+				setTimeout(fadeOut, 4000);
+
+				i+=1;
+
+			}
+
+			imageLoader();
+
+
+			function fadeOut(){
+
+				slideContainer.style.opacity = 0;
+			
+			}
+
+		</script>
+	
+
+	</body>
+	
+</html>			
